@@ -1,0 +1,29 @@
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainSection{
+  flex-grow: 1;
+}
+
+.cards-disenio{
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+ border: none;
+}
+
+.banner{
+  object-fit: cover;
+  height: 395px;
+  width: 100%;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-green:hover{
+  background-color: rgb(2, 77, 2);
+}

@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "nombreProducto": "Buzo GOT",
+      "color": "Verde",
+      "descripcion": "Buzo elastico reversible oversize",
+      "precio": "5000",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw9b1d311d/BH3522_132_24.jpg?imwidth=915&impolicy=product",
+      "talle": "M",
+      "categoria": "Buzos",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "admin",
+      "email": "admin@thehpps.com",
+      "password": "12345678aA$"
+    }
+  ]
+}
