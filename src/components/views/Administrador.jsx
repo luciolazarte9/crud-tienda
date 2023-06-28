@@ -27,10 +27,12 @@ useEffect(()=>{
           </Link>
         </div>
         <hr />
-        <Table responsive striped bordered hover>
+        <Table responsive striped bordered hover className="mb-5">
           <thead>
             <tr>
+              <th>Fecha</th>
               <th>Cod</th>
+              <th>Cantidad</th>
               <th>Producto</th>
               <th>Precio</th>
               <th>URL de Imagen</th>
