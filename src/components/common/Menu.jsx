@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import logo from '../../assets/Thehpps.png'
 
 const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
   const navegacion = useNavigate();
@@ -13,7 +14,11 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to={'/'}>TheHPPS</Navbar.Brand>
+        <Navbar.Brand as={Link} to={'/'}><img
+          className="d-flex tamano-imagen"
+          src={logo}
+          alt="logo"
+        /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

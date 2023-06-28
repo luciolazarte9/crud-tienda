@@ -17,9 +17,9 @@ const Inicio = () => {
         />
     </Carousel>
       <Container>
-        <h1 className="display-4 text-center">Looks perfectos para vos</h1>
+        <h1 className="display-5 text-center fw-bold mt-5">Looks perfectos para vos</h1>
         <hr />
-        <Row>
+        <Row className="mt-5 mb-5">
             <CardProducto></CardProducto>
         </Row>
       </Container>

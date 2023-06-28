@@ -27,3 +27,7 @@
 .btn-green:hover{
   background-color: rgb(2, 77, 2);
 }
+
+.tamano-imagen{
+  width: 150px;
+}
