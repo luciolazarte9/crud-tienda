@@ -8,7 +8,68 @@
       "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw9b1d311d/BH3522_132_24.jpg?imwidth=915&impolicy=product",
       "talle": "M",
       "categoria": "Buzos",
+      "cantidad": "30",
+      "fecha": "28/06/2023",
       "id": 1
+    },
+    {
+      "nombreProducto": "Campera",
+      "color": "Negra",
+      "descripcion": "Campera corta de hombre Thehpps acolchada e hidrófuga",
+      "precio": "90000",
+      "cantidad": "32",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw089a16b3/BH3522_Z0W_24.jpg?imwidth=915&impolicy=product",
+      "talle": "M",
+      "categoria": "Camperas",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Camperon",
+      "color": "Negro",
+      "descripcion": "Campera corta de hombre Thehpps acolchada e hidrófuga",
+      "precio": "99000",
+      "cantidad": "15",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwb7eeeb76/BH3522_031_24.jpg?imwidth=915&impolicy=product",
+      "talle": "M",
+      "categoria": "Camperas",
+      "fecha": "2023-06-28T20:11:44.653Z",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Campera",
+      "color": "Negro",
+      "descripcion": "Campera corta de hombre Thehpps acolchada e hidrófuga",
+      "precio": "78878",
+      "cantidad": "1",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw128f763c/AH8601_166_24.jpg?imwidth=915&impolicy=product",
+      "talle": "XS",
+      "categoria": "Buzos",
+      "createdAt": "28/06/2023",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Buzo",
+      "color": "Negra",
+      "descripcion": "Campera corta de hombre Thehpps acolchada e hidrófuga",
+      "precio": "768678",
+      "cantidad": "2",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw4e4d933f/L1212_031_24.jpg?imwidth=915&impolicy=product",
+      "talle": "M",
+      "categoria": "Buzos",
+      "fecha": "28/06/2023",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Camperon",
+      "color": "Negro",
+      "descripcion": "Campera corta de hombre Thehpps acolchada e hidrófuga",
+      "precio": "78678",
+      "cantidad": "11",
+      "imagen": "//imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwa4e8de70/AH0487_7D1_24.jpg?imwidth=915&impolicy=product",
+      "talle": "L",
+      "categoria": "Buzos",
+      "fecha": "28/06/2023",
+      "id": 7
     }
   ],
   "usuarios": [

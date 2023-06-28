@@ -30,7 +30,9 @@ const ItemProducto = ({ producto, setProductos }) => {
 
   return (
     <tr>
+      <td>{producto.fecha}</td>
       <td>{producto.id}</td>
+      <td>{producto.cantidad}</td>
       <td>{producto.nombreProducto}</td>
       <td>${producto.precio}</td>
       <td>{producto.imagen}</td>

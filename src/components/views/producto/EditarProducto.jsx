@@ -127,8 +127,8 @@ const EditarProducto = () => {
                 message: "El precio minimo es de $1",
               },
               max: {
-                value: 10000,
-                message: "El precio maximo es de $10000",
+                value: 9999999,
+                message: "El precio maximo es de $9999999",
               },
             })}
           />
@@ -136,6 +136,27 @@ const EditarProducto = () => {
             {errors.precio?.message}
           </Form.Text>
         </Form.Group>
+        <Form.Group className="mb-3" controlId="formPrecio">
+        <Form.Label>Cantidad</Form.Label>
+        <Form.Control
+          type="number"
+          placeholder="Ej: 40"
+          {...register("cantidad", {
+            required: "La cantidad del producto es obligatoria",
+            min: {
+              value: 1,
+              message: "La cantidad minima es de 1",
+            },
+            max: {
+              value: 10000,
+              message: "La cantidad maxima de productos ingresados es de 10000 unidades.",
+            },
+          })}
+        />
+        <Form.Text className="text-danger">
+          {errors.precio?.message}
+        </Form.Text>
+      </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
           <Form.Label>Imagen URL</Form.Label>
           <Form.Control

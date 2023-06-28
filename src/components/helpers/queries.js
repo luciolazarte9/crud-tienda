@@ -48,21 +48,30 @@ export const obtenerUnProducto = async (id)=> {
 
 }
 
-export const crearProducto = async (producto)=> {
-    try{
-        const respuesta = await fetch(URL_producto,{
-            method: "POST",
-            headers: {
-                "Content-Type":"application/json"
-            },
-            body : JSON.stringify(producto)
-        });
-        return respuesta;
-    }catch{
-        console.log(error)
+export const crearProducto = async (producto) => {
+    try {
+      const fechaActual = new Date(); // fecha actual
+      //formato de fecha
+      const dia = fechaActual.getDate().toString().padStart(2, '0');
+      const mes = (fechaActual.getMonth() + 1).toString().padStart(2, '0');
+      const anio = fechaActual.getFullYear();
+      producto.fecha = `${dia}/${mes}/${anio}`;
+  
+      const respuesta = await fetch(URL_producto, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(producto)
+      });
+  
+      return respuesta;
+    } catch{
+      console.log(error);
     }
-
-}
+  };
+  
+  
 export const borrarProducto = async (id)=> {
     try{
         const respuesta = await fetch(URL_producto+'/'+id,{
@@ -90,3 +99,22 @@ export const editarProducto = async (producto, id)=> {
     }
 
 }
+
+// Ejemplo utilizando JSON Server
+const crearFechaProducto = async (producto) => {
+    try{
+        producto.createdAt = new Date(); // Asigna la fecha de creación al objeto de producto
+        
+        const respuesta = await fetch(URL_producto, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(producto)
+        });
+    }catch{
+        console.log(error)
+    }
+    
+  };
+  
