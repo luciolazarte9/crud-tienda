@@ -99,22 +99,3 @@ export const editarProducto = async (producto, id)=> {
     }
 
 }
-
-// Ejemplo utilizando JSON Server
-const crearFechaProducto = async (producto) => {
-    try{
-        producto.createdAt = new Date(); // Asigna la fecha de creación al objeto de producto
-        
-        const respuesta = await fetch(URL_producto, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(producto)
-        });
-    }catch{
-        console.log(error)
-    }
-    
-  };
-  
