@@ -15,7 +15,7 @@ const Login = ({setUsuarioLogueado}) => {
       if(respuesta){
         sessionStorage.setItem('usuario', JSON.stringify(respuesta));
         setUsuarioLogueado(respuesta);
-        navegacion('/administrador')
+        navegacion('/')
       }else{
         Swal.fire(
           'Oops! ocurrio un error',

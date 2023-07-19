@@ -78,6 +78,18 @@
       "nombreUsuario": "admin",
       "email": "admin@thehpps.com",
       "password": "12345678aA$"
+    },
+    {
+      "email": "admin@crudcafe.com",
+      "nombreUsuario": "luciolazarte9",
+      "password": "12345678aA$",
+      "id": 2
+    },
+    {
+      "email": "admin@crudcafe.com",
+      "nombreUsuario": "luciolazarte9",
+      "password": "12345678aA$",
+      "id": 3
     }
   ]
 }

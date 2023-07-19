@@ -6,9 +6,8 @@ const RutasProtegidas = ({children}) => {
    //pregunta si el usuarioLogueado esta vacio
    if(!usuarioLogueado){
     return <Navigate to={'/login'}></Navigate>
-   }else{
-    //si estoy logueado
-    return children
+   }else if (usuarioLogueado != 'admin'){
+    return <Navigate to={'/'}></Navigate>
    }
 };
 

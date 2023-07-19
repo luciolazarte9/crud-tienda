@@ -22,7 +22,7 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavLink end to={"/"} className={"nav-item nav-link"}>Inicio</NavLink>
+
             {
               usuarioLogueado.nombreUsuario?
               <>
@@ -31,11 +31,20 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
 
             }
             {
-              usuarioLogueado.nombreUsuario?
+              usuarioLogueado.nombreUsuario === 'admin'?
               <>
               <NavLink end to={"/administrador"} className={"nav-item nav-link"}>Administrador</NavLink>
+              
+              </>:<NavLink end to={"/"} className={"nav-item nav-link"}>Inicio</NavLink>
+              
+
+            }
+            {
+              usuarioLogueado.nombreUsuario?
+              <>
+              <NavLink end to={"/login"} className={"nav-item nav-link"}>Iniciar sesion</NavLink>
               <NavLink className={"mav-item nav-link"} onClick={logout}>Salir</NavLink>
-              </>:<NavLink end to={"/login"} className={"nav-item nav-link"}>Iniciar sesion</NavLink>
+              </>:            <NavLink end to={"/"} className={"nav-item nav-link"}>Inicio</NavLink>
             }
           </Nav>
         </Navbar.Collapse>
