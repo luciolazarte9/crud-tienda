@@ -99,3 +99,19 @@ export const editarProducto = async (producto, id)=> {
     }
 
 }
+
+export const crearUsuario = async (usuario) => {
+    try {
+      const respuesta = await fetch(URL_usuario, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(usuario)
+      });
+      return respuesta;
+    }catch{
+      console.log(error);
+    }
+  };
+  
