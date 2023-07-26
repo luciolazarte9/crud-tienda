@@ -58,7 +58,7 @@ const EditarProducto = () => {
           <Form.Label>Producto</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ej: Buzo (nombre)"
+            placeholder="Producto"
             {...register("nombreProducto", {
               required: "El nombre del producto es obligatorio",
               minLength: {
